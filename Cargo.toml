@@ -1,6 +1,6 @@
 [package]
 name = "drcode"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Your Name <your.email@example.com>"]
 edition = "2021"
 description = "A Rust package for easy integration with DrCode error tracking"

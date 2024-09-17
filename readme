@@ -1,13 +1,13 @@
 # DrCode
 
-DrCode is a Rust library that provides an easy-to-use wrapper around Sentry for error tracking and logging. It simplifies the integration of Sentry into your Rust applications, allowing you to capture messages, errors, and panics efficiently.
+DrCode is a Rust library that provides an easy-to-use wrapper around for error tracking and logging. It simplifies the integration of into your Rust applications, allowing you to capture messages, errors, and panics efficiently.
 
 ## Features
 
-- Capture messages with various severity levels
+- Capture messages with various levels
 - Capture custom errors
 - Automatic panic capturing
-- Easy Sentry integration with configuration validation
+- Easy integration with configuration validation
 
 ## Installation
 
@@ -15,11 +15,11 @@ To use DrCode in your Rust project, add it to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-drcode = "0.1.2"  # Replace with the latest version
+drcode = "0.1.3"  # Replace with the latest version
 ```
 
 Configuration
-You need to provide your Sentry configuration with a public key and project ID. Optionally, you can set a traces_sample_rate to control the sampling of traces.
+You need to provide your configuration with a public key and project ID. Optionally, you can set a traces_sample_rate to control the sampling of traces.
 
 Here's an example configuration:
 
@@ -40,10 +40,10 @@ fn main() {
     // Capture a message with info level
     drcode.capture_message("Test message from DrCode project", Level::Info);
 
-    // Set up panic hook to capture panics in Sentry
+    // Set up panic hook to capture panics in
     setup_panic_hook();
 
-    // Trigger a panic to check if Sentry captures it
+    // Trigger a panic to check if  captures it
     panic!("Test panic from DrCode project");
 
     println!("Test completed successfully!"); // This will not be reached due to the panic
@@ -57,13 +57,13 @@ capture_message(&self, message: &str, level: Level) Captures a message with the 
 
 capture_error(&self, error: &E) Captures a custom error. The error must implement std::error::Error and be Send, Sync, and 'static.
 
-setup_panic_hook() Sets up a panic hook to automatically capture panics and send them to Sentry
+setup_panic_hook() Sets up a panic hook to automatically capture panics and send them to
 
 Error Handling
 The library provides the following errors:
 
 DrCodeError::MissingField(String): Indicates a missing required configuration field.
-DrCodeError::InitializationError(String): Indicates an error during Sentry initialization.
+DrCodeError::InitializationError(String): Indicates an error during initialization.
 Examples
 
 ```
@@ -85,7 +85,7 @@ rust
 Copy code
 setup_panic_hook();
 // Trigger a panic to test
-panic!("This panic should be captured by Sentry");
+panic!("This panic should be captured by ");
 
 ```
 
@@ -103,7 +103,7 @@ Copy code
 
 ### Notes
 
-1. **Replace Placeholder Values**: Be sure to replace `"your-public-key"`, `"your-project-id"`, and other placeholder values with actual information specific to your Sentry setup.
+1. **Replace Placeholder Values**: Be sure to replace `"your-public-key"`, `"your-project-id"`, and other placeholder values with actual information specific to your setup.
 2. **License and Contact Information**: Update the license section and contact information to reflect your project's details.
 
 Feel free to adjust the content according to your specific needs or preferences!
