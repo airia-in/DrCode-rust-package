@@ -1,9 +1,9 @@
 [package]
-name = "drcode"
-version = "0.1.3"
-authors = ["Your Name <your.email@example.com>"]
+name = "drcode-rust"
+version = "1.0.0"
+authors = ["Ashutosh Renu <ashutosh@airia.in>"]
 edition = "2021"
-description = "A Rust package for easy integration with DrCode error tracking"
+description = "A drcode-rust is a Rust package that facilitates error tracking and performance monitoring for your applications. Utilizing the sentry package internally, drcode-rust collects and processes application logs to provide detailed insights into errors and performance issues. With this package, you can easily integrate error tracking into your Rust applications, helping you to maintain optimal performance and quickly address issues."
 license = "MIT"
 
 [dependencies]
