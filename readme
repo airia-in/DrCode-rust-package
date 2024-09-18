@@ -15,7 +15,7 @@ To use DrCode in your Rust project, add it to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-drcode = "1.0.1"  # Replace with the latest version
+drcode-rust = "1.0.1"  # Replace with the latest version
 ```
 
 Configuration
