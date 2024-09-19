@@ -1,5 +1,5 @@
 [package]
-name = "drcode_rust"
+name = "drcode-rust"
 version = "1.1.0"
 authors = ["Ashutosh Renu <ashutosh@airia.in>"]
 edition = "2021"
